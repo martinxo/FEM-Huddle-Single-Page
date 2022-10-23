@@ -1,0 +1,164 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --Button-Soft-Magenta: hsl(300, 69%, 71%);
+  --White: hsla(0, 0%, 100%, 1);
+
+  --font-size: 1.125rem;
+  --poppins: 'Poppins', sans-serif;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding:0;
+  margin:0;
+  font-family: var(--open-sans);
+  background-color: var(--Violet);
+  color: var(--White);
+  font-size: var(--font-size);
+}
+
+body {
+  background-image: url("/img/bg-mobile.svg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+ }
+
+h1, h2, h3 {
+  margin:0;
+}
+
+/* MAIN */
+
+h1 {
+  font-family: var(--poppins);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  padding-bottom:1rem;
+}
+
+p {
+  font-family: var(--open-sans);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding-bottom:1.5rem;
+}
+
+.container {
+  margin:0 auto;
+  max-width: 375px;
+  padding:2.5rem;
+}
+
+/* LOGO */
+
+img.logo {
+  width:120px;
+   
+}
+
+img.illustration {
+  width:100%;
+  padding-top:4.375rem;
+  padding-bottom: 3.75rem;
+}
+
+
+/* BUTTON */
+
+button {
+  border-radius: 0;
+  text-align: inherit;
+  background: var(--White);
+  box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
+  border-radius: 28px;
+  padding: 15px 90px;
+  cursor: pointer;
+  border: none;
+  color: var(--Violet);
+  font-family: var(--poppins);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  display:block; 
+  margin: 0 auto;
+}
+
+button:hover {
+  background: var(--Button-Soft-Magenta);
+  color: var(--White);
+}
+
+/* social icons */
+
+ul {
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap:1.5rem;
+  padding-top:4rem;
+}
+
+ul [class*="fa-"] {
+  font-size: 200%;
+}
+
+ul a {
+  color:var(--White);
+  text-decoration: none;
+}
+
+ul a:hover {
+  color:var(--Button-Soft-Magenta);
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 1200px;
+   } 
+ 
+ section {
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap:3.75rem;
+  }
+
+  div {
+    flex:1;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  ul {
+    justify-content: flex-end;
+  }
+
+}
