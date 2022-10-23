@@ -149,7 +149,9 @@ ul a:hover {
   }
 
   h1 {
-    display: none;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
   }
 
   p {
